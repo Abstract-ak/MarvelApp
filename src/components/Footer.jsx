@@ -1,47 +1,71 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
-
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 pt-16 pb-8">
-      <div className="container mx-auto">
-        {/* Logo Slider */}
-        <div className="mb-16">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={2}
-            autoplay={{ delay: 3000 }}
-            breakpoints={{
-              640: { slidesPerView: 3 },
-              768: { slidesPerView: 4 },
-              1024: { slidesPerView: 5 },
-            }}
-          >
-            {[1, 2, 3, 4, 5].map((num) => (
-              <SwiperSlide key={num}>
-                <img 
-                  src={`/logos/partner${num}.svg`}
-                  alt={`Partner ${num}`}
-                  className="h-12 object-contain mx-auto"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <footer className="bg-gray-900 text-white p-8 relative">
+      {/* SVG Background Image */}
+      <img
+        src="/public/logos/logo--footer-bkd.svg"
+        alt="logo-footer SVG"
+        className="absolute right-14 h-96 pointer-events-none"
+      />
 
-        {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <img src="/logo.svg" alt="Marvel" className="h-8 mb-6" />
-            <p className="text-gray-600">
-              
-            </p>
+      {/* Main Footer Content */}
+      <div className="container relative py-18">
+        <img
+          src="/public/logos/logo-footer.svg"
+          alt="logo-footer SVG"
+          className="h-16 my-14"
+        />
+
+        <div className="relative z-10">
+          <div className="flex justify-between">
+            {/* Address Section */}
+            <div>
+              <h3 className="text-green-500 mb-2">Address:</h3>
+              <p className="text-gray-300">
+                2 The Granary, 39 Charlemont Street,
+                <br />
+                Moy, Dungannon, BT71 7SL
+              </p>
+            </div>
+
+            {/* Phone Section */}
+            <div>
+              <h3 className="text-green-500 mb-2">Phone:</h3>
+              <p className="text-gray-300">(028) 9099 2999</p>
+            </div>
+
+            {/* Email Section */}
+            <div>
+              <h3 className="text-green-500 mb-2">Email:</h3>
+              <p className="text-gray-300">info@websiteni.com</p>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex mt-6 space-x-4">
+              <a
+                href="#"
+                className="bg-green-600 p-2 rounded-md hover:bg-green-700 transition-colors"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                className="bg-green-600 p-2 rounded-md hover:bg-green-700 transition-colors"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                className="bg-green-600 p-2 rounded-md hover:bg-green-700 transition-colors"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer 
+export default Footer;
