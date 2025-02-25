@@ -74,8 +74,8 @@ const Banner = () => {
           </div>
         </Swiper>
       </div>
-      {/* <CompanyOverview /> */}
-      {/* <ProductRange /> */}
+      <CompanyOverview />
+      <ProductRange />
     </>
   );
 };
