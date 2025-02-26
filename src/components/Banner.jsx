@@ -5,10 +5,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ProductRange from "./ProductRange";
+import Partners from "./Partners";
+import CallToAction from "./CallToAction";
 const Banner = () => {
   return (
     <>
-      <div>
+      <div className="mt-20">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={0}
@@ -21,7 +23,9 @@ const Banner = () => {
           <SwiperSlide>
             <div
               className="w-full h-full bg-cover bg-center relative"
-              style={{ backgroundImage: `url(/banner-image.jpg)` }}
+              style={{
+                backgroundImage: `url(/public/partner-logo/Evenproducts Logo.png)`,
+              }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               <div className="container mx-auto h-full flex items-center">
@@ -74,8 +78,10 @@ const Banner = () => {
           </div>
         </Swiper>
       </div>
-      <CompanyOverview />
+      {/* <CompanyOverview />
       <ProductRange />
+      <Partners />
+      <CallToAction /> */}
     </>
   );
 };
