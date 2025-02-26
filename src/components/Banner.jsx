@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 import ProductRange from "./ProductRange";
 const Banner = () => {
   return (
-    <div>
-      <div className="mt-20">
+    <>
+      <div>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={0}
@@ -25,7 +25,7 @@ const Banner = () => {
             >
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               <div className="container mx-auto h-full flex items-center">
-                <div className="text-white max-w-xl px-4 relative z-10">
+                <div className="text-white max-w-xl px-4 relative ">
                   <p className="text-lg mb-3 font-medium">
                     Global Poultry Equipment Suppliers
                   </p>
@@ -76,7 +76,7 @@ const Banner = () => {
       </div>
       <CompanyOverview />
       <ProductRange />
-    </div>
+    </>
   );
 };
 
