@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative h-[600px] md:h-[800px]">
+    <div className="relative h-[700px] md:h-[800px]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -15,12 +15,12 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 flex flex-col justify-end items-start h-full py-20 md:py-32">
-        <div className="max-w-3xl">
+      <div className="relative h-full flex flex-col justify-center px-6 md:container md:mx-auto md:px-4">
+        <div className="max-w-xl md:max-w-3xl">
           <p className="text-white text-lg md:text-xl mb-6 font-medium">
             Global Poultry Equipment Suppliers
           </p>
-          <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-12">
+          <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-8 md:mb-12">
             WebsiteNI is a proud supplier and exporter of Poultry Farming
             Equipment to Africa.
           </h1>
@@ -29,13 +29,13 @@ const Hero = () => {
         {/* Navigation Arrows & button */}
         <div className="relative w-full flex justify-between items-center">
           <div className="flex">
-            <button className="bg-green-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-green-700 transition-colors duration-300">
+            <button className="w-full md:w-auto bg-green-600 text-white text-lg font-medium px-6 py-4 ">
               View our Product Range
             </button>
           </div>
 
           {/* Navigation button */}
-          <div className="flex gap-6">
+          <div className="hidden md:flex absolute bottom-8 right-8 gap-6">
             <button
               aria-label="Previous slide"
               className="w-12 h-12 border border-white text-white flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300"

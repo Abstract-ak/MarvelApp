@@ -65,7 +65,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 pt-6 mt-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:px-24">
-          <div className="flex gap-6 text-gray-400 text-sm">
+          <div className="flex gap-6 text-gray-400 md:text-sm text-xs">
             <p className="text-gray-400">© 2024 WebsiteNI</p>
             <span className="text-green-500">•</span>
             <p className="text-gray-400">Privacy Policy</p>
@@ -79,7 +79,7 @@ const Footer = () => {
               </a> */}
           </div>
 
-          <div className="text-sm">
+          <div className="md:text-sm text-xs">
             Created by{" "}
             <a href="#" className="text-green-300">
               WebsiteNI

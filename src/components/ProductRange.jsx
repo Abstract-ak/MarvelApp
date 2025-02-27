@@ -66,30 +66,30 @@ const ProductRange = () => {
 
   return (
     <>
-      <div className="container mx-auto py-16">
-        <div className="mb-8">
-          <h6 className="text-green-600 font-medium mb-2">Product Range</h6>
+      <div className="container mx-auto py-16 ">
+        <div className="max-w mb-12">
+          <h2 className="text-green-600 font-bold mb-4">Product Range</h2>
           <div className="flex justify-between items-end">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              <h1 className="text-2xl md:text-4xl font-bold mb-6">
                 Explore our selection of products
-              </h2>
+              </h1>
               <p className="text-gray-600">
                 Take a closer look and find the perfect fit for your
                 requirements today.
               </p>
             </div>
-            <button className="hidden md:block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors">
+            <button className="hidden text-sm md:block bg-green-600 text-white px-6 py-3">
               View full range
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {products.map((product) => (
             <div
               key={product.id}
-              className="group relative h-[300px] overflow-hidden cursor-pointer"
+              className="group relative overflow-hidden cursor-pointer"
             >
               <img
                 src={product.image}
@@ -101,7 +101,7 @@ const ProductRange = () => {
                   <h3 className="text-xl font-semibold mb-1">
                     {product.title}
                   </h3>
-                  <div className="border border-white p-1">
+                  <div className="border border-white p-2">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="none"
@@ -122,17 +122,20 @@ const ProductRange = () => {
           ))}
         </div>
 
-        <button className="md:hidden w-full bg-green-600 text-white px-6 py-2 rounded mt-6 hover:bg-green-700 transition-colors">
-          View full range
-        </button>
+        {/* View All Button */}
+        <div className="mt-8 md:mt-0">
+          <button className="md:hidden w-full bg-green-600 text-white px-8 py-3 text-center hover:bg-green-700 transition-colors duration-300">
+            View all range
+          </button>
+        </div>
       </div>
 
-      <div className="w-full bg-gradient-to-r from-[#71B742] via-[#37A849] via-[#3EA544] to-[#1C9B47] py-16 -mt-32 pt-36">
+      <div className="w-full bg-gradient-to-r from-[#71B742] via-[#37A849] via-[#3EA544] to-[#1C9B47] md:-mt-36 pt-36">
         <div className="text-center container text-white">
-          <h6 className="text-lg font-medium mb-6">
+          <h6 className="text-xl font-medium mb-6">
             Global Export Capabilities
           </h6>
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold md:mb-8 max-w-2xl mx-auto">
             Serving our Key Customers in East Africa and Beyond
           </h2>
           {/* <div className="relative max-w-5xl mx-auto">
@@ -165,7 +168,7 @@ const ProductRange = () => {
                             ))}
                         </ComposableMap>
                     </div> */}
-          <div className="relative w-full mx-auto">
+          <div className="relative w-full mx-auto py-14">
             <img
               src="/global-map.svg"
               alt="Global Map"
