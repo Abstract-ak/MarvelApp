@@ -3,12 +3,10 @@ import { useState } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
-  const [isMobileProductDropdownOpen, setIsMobileProductDropdownOpen] =
-    useState(false);
 
   return (
     // <header className=" bg-white">
-    <header className="flex justify-between bg-white p-6 ml-36 mr-36">
+    <header className="flex justify-between bg-white p-6 md:mx-24">
       {/* Logo */}
       <div className="flex-shrink-0">
         <img src="/nav-logo.svg" alt="Marvel" className="h-16 w-auto" />
@@ -94,12 +92,11 @@ const Header = () => {
       {/* Mobile Menu Button */}
       <button
         className="md:hidden p-2 relative z-50"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        // onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <svg
-          className={`w-6 h-6 ${
-            isMenuOpen ? "stroke-white" : "stroke-current"
-          }`}
+          className={`w-6 h-6 
+            // ${isMenuOpen ? "stroke-white" : "stroke-current"}`}
           fill="none"
           viewBox="0 0 24 24"
         >
