@@ -5,32 +5,32 @@ const Partners = () => {
     {
       id: 1,
       name: "Evenproducts",
-      logo: "/public/partner-logo/png2jpg/Evenproducts Logo.jpg",
+      logo: "/partner-logo/png2jpg/Evenproducts Logo.jpg",
     },
     {
       id: 2,
       name: "Kersia",
-      logo: "/public/partner-logo/png2jpg/Kersia Logo.jpg",
+      logo: "/partner-logo/png2jpg/Kersia Logo.jpg",
     },
     {
       id: 3,
       name: "Kilco",
-      logo: "/public/partner-logo/png2jpg/Kilco Logo.jpg",
+      logo: "/partner-logo/png2jpg/Kilco Logo.jpg",
     },
     {
       id: 4,
       name: "LodiUK",
-      logo: "/public/partner-logo/png2jpg/Lodi UK.jpg",
+      logo: "/partner-logo/png2jpg/Lodi UK.jpg",
     },
     {
       id: 5,
       name: "Aquatabs InLine",
-      logo: "/public/partner-logo/png2jpg/0007046_aquatabs-inline-system.jpg",
+      logo: "/partner-logo/png2jpg/0007046_aquatabs-inline-system.jpg",
     },
     {
       id: 6,
       name: "BEC",
-      logo: "/public/partner-logo/png2jpg/bec-logo.jpg",
+      logo: "/partner-logo/png2jpg/bec-logo.jpg",
     },
   ];
 
