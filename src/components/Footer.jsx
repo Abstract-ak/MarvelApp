@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white p-8 relative">
       {/* SVG Background Image */}
       <img
-        src="/public/logos/logo--footer-bkd.svg"
+        src="/logos/logo--footer-bkd.svg"
         alt="logo-footer SVG"
         className="absolute right-14 h-96 pointer-events-none"
       />
@@ -11,7 +11,7 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="container relative py-18">
         <img
-          src="/public/logos/logo-footer.svg"
+          src="/logos/logo-footer.svg"
           alt="logo-footer SVG"
           className="h-16 my-14"
         />
@@ -42,7 +42,7 @@ const Footer = () => {
 
             {/* Social Media Icons */}
             <div className="flex mt-6 space-x-4">
-              <a
+              {/* <a
                 href="#"
                 className="bg-green-600 p-2 rounded-md hover:bg-green-700 transition-colors"
               >
@@ -59,7 +59,22 @@ const Footer = () => {
                 className="bg-green-600 p-2 rounded-md hover:bg-green-700 transition-colors"
               >
                 <i className="fab fa-youtube"></i>
-              </a>
+              </a> */}
+              <img
+                src="/media-logo/facebook.svg"
+                alt="logo-footer SVG"
+                className="h-10"
+              />
+              <img
+                src="/media-logo/instagram.svg"
+                alt="logo-footer SVG"
+                className="h-10"
+              />
+              <img
+                src="/media-logo/youtube.svg"
+                alt="logo-footer SVG"
+                className="h-10"
+              />
             </div>
           </div>
         </div>
