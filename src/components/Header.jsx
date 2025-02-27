@@ -82,7 +82,7 @@ const Header = () => {
 
         <div className="flex-shrink-0">
           <img
-            src="/public/logos/search.svg"
+            src="/logos/search.svg"
             alt="Search"
             className="h-10 w-10 cursor-pointer"
           />
