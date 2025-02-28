@@ -18,10 +18,10 @@ const Footer = () => {
           alt="logo-footer SVG"
           className="h-16 my-14"
         />
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 py-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center md:mb-10 md:py-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12">
             {/* Address */}
-            <div className="md: col-span-2">
+            <div className="md:col-span-2">
               <p className="text-green-500 font-medium mb-2">Address:</p>
               <p className="text-gray-300">
                 2 The Granary, 39 Charlemont Street, Moy, Dungannon, BT71 7SL
