@@ -1,12 +1,13 @@
 import React from "react";
 
 const Hero = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div className="relative h-[700px] md:h-[800px]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/banner-image.jpg"
+          src={`${baseUrl}banner-image.jpg`}
           alt="Poultry Farmer"
           className="w-full h-full object-cover"
         />

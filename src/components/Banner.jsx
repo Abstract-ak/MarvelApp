@@ -8,6 +8,7 @@ import ProductRange from "./ProductRange";
 import Partners from "./Partners";
 import CallToAction from "./CallToAction";
 const Banner = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <>
       <div className="mt-20">
@@ -24,7 +25,7 @@ const Banner = () => {
             <div
               className="w-full h-full bg-cover bg-center relative"
               style={{
-                backgroundImage: `url(/public/partner-logo/Evenproducts Logo.png)`,
+                backgroundImage: `url("${baseUrl}partner-logo/Evenproducts%20Logo.png")`,
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>

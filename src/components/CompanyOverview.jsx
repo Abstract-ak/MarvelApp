@@ -1,4 +1,5 @@
 const CompanyOverview = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div className="w-full">
       <div className="container mx-auto py-12 md:my-16 relative">
@@ -14,7 +15,7 @@ const CompanyOverview = () => {
           ></div>
           {/* Image Section */}
           <img
-            src="/company-overview.jpg"
+            src={`${baseUrl}company-overview.jpg`}
             alt="Baby chicks drinking water"
             className="w-full object-cover relative"
           />

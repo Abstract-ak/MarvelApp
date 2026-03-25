@@ -1,6 +1,7 @@
 import React from "react";
 
 const MobileMenu = ({ isOpen, onClose }) => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div
       className={`fixed inset-0 bg-[#1E1E1E] z-50 transform transition-transform duration-300 ${
@@ -10,7 +11,11 @@ const MobileMenu = ({ isOpen, onClose }) => {
       <div className="flex flex-col h-full p-6">
         {/* Logo and Close Button */}
         <div className="flex justify-between items-center mb-16">
-          <img src="/nav-logo.svg" alt="Logo" className="h-12 w-auto" />
+          <img
+            src={`${baseUrl}nav-logo.svg`}
+            alt="Logo"
+            className="h-12 w-auto"
+          />
           <button onClick={onClose} className="text-white">
             <svg
               className="w-6 h-6"
@@ -97,7 +102,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 />
               </svg> */}
               <img
-                src="/logos/search.svg"
+                src={`${baseUrl}logos/search.svg`}
                 alt="Search"
                 className="h-full w-full object-cover m-2 cursor-pointer"
               />

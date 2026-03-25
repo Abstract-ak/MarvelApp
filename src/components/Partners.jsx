@@ -1,41 +1,42 @@
 import React from "react";
 
 const Partners = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const partners = [
     {
       id: 1,
       name: "Evenproducts",
-      logo: "/partner-logo/Evenproducts Logo.png",
+      logo: `${baseUrl}partner-logo/Evenproducts%20Logo.png`,
       hidden: false,
     },
     {
       id: 2,
       name: "Kersia",
-      logo: "/partner-logo/Kersia Logo.png",
+      logo: `${baseUrl}partner-logo/Kersia%20Logo.png`,
       hidden: false,
     },
     {
       id: 3,
       name: "Kilco",
-      logo: "/partner-logo/Kilco Logo.png",
+      logo: `${baseUrl}partner-logo/Kilco%20Logo.png`,
       hidden: true,
     },
     {
       id: 4,
       name: "LodiUK",
-      logo: "/partner-logo/Lodi UK.png",
+      logo: `${baseUrl}partner-logo/Lodi%20UK.png`,
       hidden: true,
     },
     {
       id: 5,
       name: "Aquatabs InLine",
-      logo: "/partner-logo/0007046_aquatabs-inline-system.png",
+      logo: `${baseUrl}partner-logo/0007046_aquatabs-inline-system.png`,
       hidden: true,
     },
     {
       id: 6,
       name: "BEC",
-      logo: "/partner-logo/bec-logo.png",
+      logo: `${baseUrl}partner-logo/bec-logo.png`,
       hidden: true,
     },
   ];

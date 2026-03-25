@@ -6,6 +6,7 @@ import {
 } from "react-simple-maps";
 
 const ProductRange = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json";
 
   const markers = [
@@ -20,47 +21,47 @@ const ProductRange = () => {
     {
       id: 1,
       title: "Steel Water Tanks",
-      image: "/products/steel-water-tanks.jpg",
+      image: `${baseUrl}products/steel-water-tanks.jpg`,
     },
     {
       id: 2,
       title: "Aquatabs Inline Water Purification",
-      image: "/products/aquatabs-inline.jpg",
+      image: `${baseUrl}products/aquatabs-inline.jpg`,
     },
     {
       id: 3,
       title: "Incubators & Brooders",
-      image: "/products/incubators.jpg",
+      image: `${baseUrl}products/incubators.jpg`,
     },
     {
       id: 4,
       title: "Feeders & Drinkers",
-      image: "/products/feeders-drinkers.jpg",
+      image: `${baseUrl}products/feeders-drinkers.jpg`,
     },
     {
       id: 5,
       title: "Nests & Slats",
-      image: "/products/nests-slats.jpg",
+      image: `${baseUrl}products/nests-slats.jpg`,
     },
     {
       id: 6,
       title: "Measurement",
-      image: "/products/measurement.jpg",
+      image: `${baseUrl}products/measurement.jpg`,
     },
     {
       id: 7,
       title: "Hatchery Equipment",
-      image: "/products/hatchery-equipment.jpg",
+      image: `${baseUrl}products/hatchery-equipment.jpg`,
     },
     {
       id: 8,
       title: "General Industrial Equipment",
-      image: "/products/general-industrial-equipment.jpg",
+      image: `${baseUrl}products/general-industrial-equipment.jpg`,
     },
     {
       id: 9,
       title: "Accessories",
-      image: "/products/accessories.jpg",
+      image: `${baseUrl}products/accessories.jpg`,
     },
   ];
 
@@ -170,7 +171,7 @@ const ProductRange = () => {
                     </div> */}
           <div className="relative w-full mx-auto py-14">
             <img
-              src="/global-map.svg"
+              src={`${baseUrl}global-map.svg`}
               alt="Global Map"
               className="w-full h-full object-contain"
             />

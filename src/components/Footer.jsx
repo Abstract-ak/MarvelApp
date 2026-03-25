@@ -2,19 +2,20 @@ import React from "react";
 // import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <footer className="w-full bg-black text-white p-8">
       {/* <div className="container mx-auto "> */}
       {/* SVG Background Image */}
       <img
-        src="/logos/logo--footer-bkd.svg"
+        src={`${baseUrl}logos/logo--footer-bkd.svg`}
         alt="logo-footer SVG"
         className="absolute right-16 h-96 pointer-events-none object-contain"
       />
 
       <div className="mx-auto md:px-24">
         <img
-          src="/logos/logo-footer.svg"
+          src={`${baseUrl}logos/logo-footer.svg`}
           alt="logo-footer SVG"
           className="h-16 my-14"
         />
@@ -44,17 +45,17 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex gap-4 mt-6 md:mt-0">
             <img
-              src="/media-logo/facebook.svg"
+              src={`${baseUrl}media-logo/facebook.svg`}
               alt="logo-footer SVG"
               className="h-10"
             />
             <img
-              src="/media-logo/instagram.svg"
+              src={`${baseUrl}media-logo/instagram.svg`}
               alt="logo-footer SVG"
               className="h-10"
             />
             <img
-              src="/media-logo/youtube.svg"
+              src={`${baseUrl}media-logo/youtube.svg`}
               alt="logo-footer SVG"
               className="h-10"
             />

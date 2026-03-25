@@ -2,6 +2,8 @@ import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+  // console.log("base url", baseUrl);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
 
@@ -10,7 +12,11 @@ const Header = () => {
       <header className="flex justify-between bg-white p-6 md:mx-24">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src="/nav-logo.svg" alt="Marvel" className="h-16 w-auto" />
+          <img
+            src={`${baseUrl}nav-logo.svg`}
+            alt="Marvel"
+            className="h-16 w-auto"
+          />
         </div>
 
         {/* Desktop Navigation */}
@@ -58,7 +64,7 @@ const Header = () => {
 
           <div className="flex-shrink-0">
             <img
-              src="/logos/search.svg"
+              src={`${baseUrl}logos/search.svg`}
               alt="Search"
               className="h-10 w-10 cursor-pointer"
             />
